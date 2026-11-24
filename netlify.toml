@@ -1,0 +1,44 @@
+# Statische site: geen build-stap nodig. Netlify publiceert deze map zoals hij is.
+[build]
+  publish = "."
+
+# www.vincenthovels.com doorsturen naar vincenthovels.com
+[[redirects]]
+  from = "https://www.vincenthovels.com/*"
+  to = "https://vincenthovels.com/:splat"
+  status = 301
+  force = true
+
+# Veelgebruikte adressen van de oude (Wix-)site
+[[redirects]]
+  from = "/about"
+  to = "/over-mij/"
+  status = 301
+[[redirects]]
+  from = "/over"
+  to = "/over-mij/"
+  status = 301
+[[redirects]]
+  from = "/blog"
+  to = "/artikelen/"
+  status = 301
+[[redirects]]
+  from = "/blog/*"
+  to = "/artikelen/"
+  status = 301
+[[redirects]]
+  from = "/post/*"
+  to = "/artikelen/"
+  status = 301
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
