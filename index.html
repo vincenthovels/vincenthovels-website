@@ -57,6 +57,8 @@ section,article{z-index:auto!important}section>*,article>*,footer>*{position:rel
 @keyframes logoscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion: reduce){.w-a,.w-b,.logo-track{animation:none}}
 .hdr-wrap.is-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:#E8DCC8;box-shadow:0 1px 0 #D6C6AB,0 10px 24px rgba(34,29,24,.08);transform:translateY(-100%)}.hdr-wrap.is-fixed.anim{transition:transform .28s ease}.hdr-wrap.is-fixed.is-shown{transform:none}.hdr-wrap.is-fixed header{padding-top:12px!important;padding-bottom:12px!important}.hdr-wrap.is-fixed header>a:first-child svg{width:44px;height:44px}@media (prefers-reduced-motion: reduce){.hdr-wrap.is-fixed.anim{transition:none}}
+.hdr-wrap{position:relative;z-index:5}.nav-cta:hover{background:#8A3A16!important;border-color:#8A3A16!important;color:#FFF8EE!important}
+#referenties figure[aria-hidden="false"]{transition-delay:.5s}
 </style>
 </head>
 <body>
@@ -99,7 +101,7 @@ section,article{z-index:auto!important}section>*,article>*,footer>*{position:rel
         <a href="/over-mij/" style="text-decoration: none; color: #221D18">Over mij</a>
         <a href="#referenties" style="text-decoration: none; color: #221D18">Referenties</a>
         <a href="/artikelen/" style="text-decoration: none; color: #221D18">Artikelen</a>
-        <a href="/contact/" style="display: inline-flex; align-items: center; min-height: 44px; margin-top: -10px; margin-bottom: -10px; padding: 0 20px; border-radius: 999px; border: 1.5px solid #9A4320; color: #9A4320; text-decoration: none">Kennismaken</a>
+        <a href="/contact/" class="nav-cta" style="display: inline-flex; align-items: center; min-height: 44px; margin-top: -10px; margin-bottom: -10px; padding: 0 22px; border-radius: 999px; border: 1.5px solid #B0501F; background: #B0501F; color: #FFF8EE; font-weight: 600; text-decoration: none">Kennismaken</a>
       </nav>
     </header>
     </div>
@@ -201,35 +203,35 @@ section,article{z-index:auto!important}section>*,article>*,footer>*{position:rel
     </div>
   </section>
 
-  <section id="referenties" style="max-width: 1160px; margin: 0 auto; padding: 48px 40px 8px">
-    <div style="border-radius: 28px; background: #37662F; color: #F2EBDD; padding: 56px 48px; display: flex; flex-direction: column; gap: 36px">
+  <section id="referenties" style="max-width: 1160px; margin: 0 auto; padding: 24px 40px 8px">
+    <div style="border-radius: 28px; background: #37662F; color: #F2EBDD; padding: 40px 48px; display: flex; flex-direction: column; gap: 24px">
       <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 16px">
         <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: 40px; line-height: 1.1">Wat anderen zeggen</h2>
       </div>
       <div style="display: grid; min-height: 220px">
         
-          <figure class="ref-fig" aria-hidden="false" style="grid-area: 1 / 1; margin: 0; max-width: 860px; display: flex; flex-direction: column; justify-content: center; gap: 22px; opacity: 1; transition: opacity 1.4s ease">
-            <blockquote style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: clamp(21px, 2vw, 26px); line-height: 1.45; color: #F2EBDD">“Ik heb het traject als erg prettig en waardevol ervaren. De gesprekken hielpen me om bewuster naar mijn gevoel en kernwaarden te kijken, situaties vanuit een ruimer perspectief te bekijken en beter te begrijpen wat er intern bij mij gebeurt en mijn gevoel te volgen hierin. De coaching voelde professioneel, open, persoonlijk en zonder oordeel, waardoor er ruimte was om alles te bespreken. Ik zou het traject zeker aanraden aan anderen die bewust willen stilstaan bij hun persoonlijke en professionele ontwikkeling.”</blockquote>
+          <figure class="ref-fig" aria-hidden="false" style="grid-area: 1 / 1; margin: 0; max-width: 860px; display: flex; flex-direction: column; justify-content: center; gap: 22px; opacity: 1; transition: opacity .55s ease">
+            <blockquote style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: clamp(20px, 1.8vw, 23px); line-height: 1.45; color: #F2EBDD">“Ik heb het traject als erg prettig en waardevol ervaren. De gesprekken hielpen me om bewuster naar mijn gevoel en kernwaarden te kijken, situaties vanuit een ruimer perspectief te bekijken en beter te begrijpen wat er intern bij mij gebeurt en mijn gevoel te volgen hierin. De coaching voelde professioneel, open, persoonlijk en zonder oordeel, waardoor er ruimte was om alles te bespreken. Ik zou het traject zeker aanraden aan anderen die bewust willen stilstaan bij hun persoonlijke en professionele ontwikkeling.”</blockquote>
             <figcaption style="font-size: 16px; font-weight: 600; color: #D3E0CF">Manager Technologie &amp; Innovatie, Wavin</figcaption>
           </figure>
         
-          <figure class="ref-fig" aria-hidden="true" style="grid-area: 1 / 1; margin: 0; max-width: 860px; display: flex; flex-direction: column; justify-content: center; gap: 22px; opacity: 0; transition: opacity 1.4s ease">
-            <blockquote style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: clamp(21px, 2vw, 26px); line-height: 1.45; color: #F2EBDD">“Vincent wist in een zeer complexe organisatie, met verschillende culturen, disciplines en locaties, de werkwijze van het project neer te zetten. Hij brengt een echte helikopterview mee en is heel goed in staat om activiteiten te structureren en te verbinden met het grotere geheel.”</blockquote>
+          <figure class="ref-fig" aria-hidden="true" style="grid-area: 1 / 1; margin: 0; max-width: 860px; display: flex; flex-direction: column; justify-content: center; gap: 22px; opacity: 0; transition: opacity .55s ease">
+            <blockquote style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: clamp(20px, 1.8vw, 23px); line-height: 1.45; color: #F2EBDD">“Vincent wist in een zeer complexe organisatie, met verschillende culturen, disciplines en locaties, de werkwijze van het project neer te zetten. Hij brengt een echte helikopterview mee en is heel goed in staat om activiteiten te structureren en te verbinden met het grotere geheel.”</blockquote>
             <figcaption style="font-size: 16px; font-weight: 600; color: #D3E0CF">Global Director, FrieslandCampina</figcaption>
           </figure>
         
-          <figure class="ref-fig" aria-hidden="true" style="grid-area: 1 / 1; margin: 0; max-width: 860px; display: flex; flex-direction: column; justify-content: center; gap: 22px; opacity: 0; transition: opacity 1.4s ease">
-            <blockquote style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: clamp(21px, 2vw, 26px); line-height: 1.45; color: #F2EBDD">“Toch een gesprek aangaan als je eigenlijk een beetje bang bent voor de reactie. Vincent creëerde een open en veilige sfeer, zodat we buiten onze comfortzone durfden te stappen. Hij zag beter dan wij wat er nodig was en speelde daarop in, door bijvoorbeeld onderwerpen te benoemen die al langer schuurden. Ik voelde me echt ondersteund en heb de samenwerking ervaren als buitengewoon positief.”</blockquote>
+          <figure class="ref-fig" aria-hidden="true" style="grid-area: 1 / 1; margin: 0; max-width: 860px; display: flex; flex-direction: column; justify-content: center; gap: 22px; opacity: 0; transition: opacity .55s ease">
+            <blockquote style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: clamp(20px, 1.8vw, 23px); line-height: 1.45; color: #F2EBDD">“Toch een gesprek aangaan als je eigenlijk een beetje bang bent voor de reactie. Vincent creëerde een open en veilige sfeer, zodat we buiten onze comfortzone durfden te stappen. Hij zag beter dan wij wat er nodig was en speelde daarop in, door bijvoorbeeld onderwerpen te benoemen die al langer schuurden. Ik voelde me echt ondersteund en heb de samenwerking ervaren als buitengewoon positief.”</blockquote>
             <figcaption style="font-size: 16px; font-weight: 600; color: #D3E0CF">Director, Universiteit Twente</figcaption>
           </figure>
         
-          <figure class="ref-fig" aria-hidden="true" style="grid-area: 1 / 1; margin: 0; max-width: 860px; display: flex; flex-direction: column; justify-content: center; gap: 22px; opacity: 0; transition: opacity 1.4s ease">
-            <blockquote style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: clamp(21px, 2vw, 26px); line-height: 1.45; color: #F2EBDD">“Vincent weet complexe vraagstukken helder en eenvoudig te maken, zonder het grotere geheel uit het oog te verliezen. Hij brengt waardevolle inzichten in en schetst verschillende scenario's om verder te komen, met oog voor uiteenlopende perspectieven.”</blockquote>
+          <figure class="ref-fig" aria-hidden="true" style="grid-area: 1 / 1; margin: 0; max-width: 860px; display: flex; flex-direction: column; justify-content: center; gap: 22px; opacity: 0; transition: opacity .55s ease">
+            <blockquote style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: clamp(20px, 1.8vw, 23px); line-height: 1.45; color: #F2EBDD">“Vincent weet complexe vraagstukken helder en eenvoudig te maken, zonder het grotere geheel uit het oog te verliezen. Hij brengt waardevolle inzichten in en schetst verschillende scenario's om verder te komen, met oog voor uiteenlopende perspectieven.”</blockquote>
             <figcaption style="font-size: 16px; font-weight: 600; color: #D3E0CF">Director, FrieslandCampina</figcaption>
           </figure>
         
-          <figure class="ref-fig" aria-hidden="true" style="grid-area: 1 / 1; margin: 0; max-width: 860px; display: flex; flex-direction: column; justify-content: center; gap: 22px; opacity: 0; transition: opacity 1.4s ease">
-            <blockquote style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: clamp(21px, 2vw, 26px); line-height: 1.45; color: #F2EBDD">“In een intervisiesessie doorzag ik mijn eigen gedrag als superheld. De verschillende werkvormen hebben mij en ons precies het zetje gegeven dat we nodig hadden. Dankzij de veilige sfeer die Vincent creëerde, konden we ons kwetsbaar opstellen.”</blockquote>
+          <figure class="ref-fig" aria-hidden="true" style="grid-area: 1 / 1; margin: 0; max-width: 860px; display: flex; flex-direction: column; justify-content: center; gap: 22px; opacity: 0; transition: opacity .55s ease">
+            <blockquote style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: clamp(20px, 1.8vw, 23px); line-height: 1.45; color: #F2EBDD">“In een intervisiesessie doorzag ik mijn eigen gedrag als superheld. De verschillende werkvormen hebben mij en ons precies het zetje gegeven dat we nodig hadden. Dankzij de veilige sfeer die Vincent creëerde, konden we ons kwetsbaar opstellen.”</blockquote>
             <figcaption style="font-size: 16px; font-weight: 600; color: #D3E0CF">Eigenaar, Oostkracht10</figcaption>
           </figure>
         
@@ -256,11 +258,11 @@ section,article{z-index:auto!important}section>*,article>*,footer>*{position:rel
     </div>
   </section>
 
-  <section id="klanten" style="padding: 88px 0 8px">
-    <div style="max-width: 1160px; margin: 0 auto; padding: 0 40px 28px">
+  <section id="klanten" style="padding: 24px 0 8px">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 0 40px 18px">
       <p style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A4320">Ik werkte onder andere met</p>
     </div>
-    <div class="logo-strip" style="overflow: hidden; border-top: 1.5px solid #C9B79A; border-bottom: 1.5px solid #C9B79A; padding: 36px 0">
+    <div class="logo-strip" style="overflow: hidden; border-top: 1.5px solid #C9B79A; border-bottom: 1.5px solid #C9B79A; padding: 28px 0">
       <div class="logo-track" style="display: flex; width: max-content">
         <div style="display: flex; align-items: center"><img loading="lazy" decoding="async" src="/img/logo-universiteit-twente.png" alt="Universiteit Twente" style="height: 50px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-frieslandcampina.png" alt="FrieslandCampina" style="height: 44px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-gemeente-den-haag.png" alt="Gemeente Den Haag" style="height: 72px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-szw.png" alt="Ministerie van Sociale Zaken en Werkgelegenheid" style="height: 60px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-wavin.png" alt="Wavin" style="height: 34px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-sweco.png" alt="Sweco" style="height: 40px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-oostkracht10.png" alt="Oostkracht10" style="height: 54px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-rijkswaterstaat.png" alt="Rijkswaterstaat" style="height: 60px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-startup-in-residence.png" alt="Startup in Residence" style="height: 46px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-ecare.png" alt="ECARE" style="height: 30px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-bol-com.png" alt="bol.com" style="height: 52px; width: auto; margin-right: 96px; flex: 0 0 auto"></div>
         <div aria-hidden="true" style="display: flex; align-items: center"><img loading="lazy" decoding="async" src="/img/logo-universiteit-twente.png" alt="" style="height: 50px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-frieslandcampina.png" alt="" style="height: 44px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-gemeente-den-haag.png" alt="" style="height: 72px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-szw.png" alt="" style="height: 60px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-wavin.png" alt="" style="height: 34px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-sweco.png" alt="" style="height: 40px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-oostkracht10.png" alt="" style="height: 54px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-rijkswaterstaat.png" alt="" style="height: 60px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-startup-in-residence.png" alt="" style="height: 46px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-ecare.png" alt="" style="height: 30px; width: auto; margin-right: 96px; flex: 0 0 auto"><img loading="lazy" decoding="async" src="/img/logo-bol-com.png" alt="" style="height: 52px; width: auto; margin-right: 96px; flex: 0 0 auto"></div>
