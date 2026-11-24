@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vincenthovels.com/sitemap.xml
+Sitemap: https://www.vincenthovels.com/sitemap.xml
