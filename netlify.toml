@@ -2,13 +2,6 @@
 [build]
   publish = "."
 
-# www.vincenthovels.com doorsturen naar vincenthovels.com
-[[redirects]]
-  from = "https://www.vincenthovels.com/*"
-  to = "https://vincenthovels.com/:splat"
-  status = 301
-  force = true
-
 # Veelgebruikte adressen van de oude (Wix-)site
 [[redirects]]
   from = "/about"
